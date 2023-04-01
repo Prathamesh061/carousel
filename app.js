@@ -34,3 +34,10 @@ carousel.querySelector(".next").onclick = function () {
   position = Math.max(position, -width * (listElems.length - count));
   list.style.marginLeft = position + "px";
 };
+
+let menuElem = document.getElementById("sweeties");
+let titleElem = menuElem.querySelector(".title");
+
+titleElem.onclick = function () {
+  menuElem.classList.toggle("open");
+};
